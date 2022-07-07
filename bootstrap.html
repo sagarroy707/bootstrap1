@@ -6,41 +6,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <title>Guided website</title>
+    <title>Benefits of Bootstrap</title>
 </head>
 <body>
-    <h1>Grid</h1>
+    <!-- Bootstrap nav bar code -->
+    <section class="nav">
+       <div class="container">
+            <nav class="navbar navbar-expand-lg bg-primary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active text-light" aria-current="page" href="#grid">Grid</a>
+                      <a class="nav-link active text-light" href="#images">Images</a>
+                      <a class="nav-link active text-light" href="#table">Tables</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </section>
+    
     <!-- bootstrap grid code -->
 
-    <div class="container">
-        <div class="row">
-          <div class="col-sm-8">apple</div>
-          <div class="col-sm-4">banana</div>
-        </div>
-        <div class="row">
-          <div class="col-sm">plum</div>
-          <div class="col-sm">pear</div>
-          <div class="col-sm">orange</div>
-        </div>
-      </div>
-
-      <!--another bootstrap grid code -->
-
-      <div class="container px-lg-5">
-        <div class="row mx-lg-n5">
-            <div class="col py-3 px-lg-5 border bg-light">ribs</div>
-            <div class="col py-3 px-lg-5 border bg-light">salad</div>
-        </div>
-      </div>
+    <section id="grid">
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-8">apple</div>
+              <div class="col-sm-4">banana</div>
+            </div>
+            <div class="row">
+              <div class="col-sm">plum</div>
+              <div class="col-sm">pear</div>
+              <div class="col-sm">orange</div>
+            </div>
+          </div>
+    
+          <!--another bootstrap grid code -->
+    
+          <div class="container px-lg-5">
+            <div class="row mx-lg-n5">
+                <div class="col py-3 px-lg-5 border bg-light">ribs</div>
+                <div class="col py-3 px-lg-5 border bg-light">salad</div>
+            </div>
+          </div>
+    </section>
+    
 
       <!-- Image bootstrap code -->
-
-      <div class="container px-lg-5">
-        <div class="row mx-lg-n5">
-            <div class="col py-3 col-5 border bg-light"><img src="Images\Dhoni-1.jpg" class="rounded float-start " alt="dhoni"></div>
-            <div class="col py-3 col-7 border bg-light"><img src="Images\dhoni-2.jpeg" class="rounded float-end" alt="dhoni"></div>
+    <section id="images">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                    alt="Boat on Calm Water"
+                  />
+              
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                    alt="Wintry Mountain Landscape"
+                  />
+                </div>
+              
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                    alt="Mountains in the Clouds"
+                  />
+              
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                    alt="Boat on Calm Water"
+                  />
+                </div>
+              
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                    alt="Waves at Sea"
+                  />
+              
+                  <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                    alt="Yosemite National Park"
+                  />
+                </div>
+              </div>
         </div>
-      </div>
+      </section>
+    
+      <!-- Bootstrap table code -->
+      <section id="table">
+        <div class="container">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Days of week</th>
+                    <th scope="col">Breakfast</th>
+                    <th scope="col">Lunch</th>
+                    <th scope="col">Dinner</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    
+                    <th scope="col">Monday</th>
+                    <th scope="col">bread</th>
+                    <th scope="col">juice</th>
+                    <th scope="col">Nothing</th>
+                  </tr>
+                  <tr>
+                    
+                    <th scope="col">Tuesday</th>
+                    <th scope="col">daal chawal</th>
+                    <th scope="col">shake</th>
+                    <th scope="col">nothing</th>
+                  </tr>
+                  <tr>
+                    
+                    <th scope="col">Sunday</th>
+                    <th scope="col">briyani</th>
+                    <th scope="col">khir</th>
+                    <th scope="col">Nothing</th>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+      </section>
 
       
       
